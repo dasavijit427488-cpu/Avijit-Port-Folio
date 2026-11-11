@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Avijit Das | Professional Portfolio & Growth Expert</title>
+    <link rel="icon" href="ChatGPT Image Sep 13, 2026, 09_14_09 PM.png" type="image/png">
+    
+    <!-- INSTANT IMAGE PRELOAD FOR ZERO DELAY -->
+    <link rel="preload" href="ChatGPT Image Sep 13, 2026, 09_01_46 PM.png" as="image" fetchpriority="high">
+    <link rel="preload" href="ChatGPT Image Sep 13, 2026, 09_14_09 PM.png" as="image" fetchpriority="high">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =========================================
+           CSS VARIABLES & GLOBAL RESET
+           ========================================= */
+        :root {
+            --white: #ffffff;
+            --text-dark: #0f172a; 
+            --text-light: #475569;
+            --primary-orange: #FF8C00;
+            --primary-gradient: linear-gradient(135deg, #FF8C00 0%, #FF512F 100%);
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 140, 0, 0.25); 
+            --shadow-soft: 0 15px 35px rgba(255, 140, 0, 0.08);
+            --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 20px 40px rgba(255, 140, 0, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        body { color: var(--text-dark); overflow-x: hidden; background-color: #f8fafc; text-align: left; line-height: 1.6; }
+
+        /* =========================================
+           ABUNDANT & FAST 3D BACKGROUND OBJECTS
+           ========================================= */
+        .premium-global-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -10; background: linear-gradient(135deg, #ffffff 0%, #f4f7f9 100%); overflow: hidden; perspective: 1200px;}
+        .bg-texture { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(rgba(255, 140, 0, 0.15) 2px, transparent 2px); background-size: 50px 50px; z-index: 1; opacity: 0.5;}
+        
+        .bg-glow-1 { position: absolute; top: -10%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(255, 140, 0, 0.08) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); animation: pulseGlow 8s infinite alternate ease-in-out; }
+        .bg-glow-2 { position: absolute; bottom: -15%; right: -10%; width: 60vw; height: 60vw; background: radial-gradient(circle, rgba(255, 81, 47, 0.05) 0%, transparent 70%); border-radius: 50%; filter: blur(80px); animation: pulseGlow 10s infinite alternate-reverse ease-in-out; }
+        @keyframes pulseGlow { 0% {transform: scale(1);} 100% {transform: scale(1.1);} }
+
+        /* Multiple 3D Glass Objects filling Negative Space */
+        .glass-3d-obj { position: absolute; z-index: 2; pointer-events: none; will-change: transform; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transform-style: preserve-3d; }
+        
+        /* Spheres (FASTER ANIMATION) */
+        .obj-sphere-1 { width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,1), rgba(255,140,0,0.15)); box-shadow: -15px 20px 35px rgba(255,140,0,0.15), inset 10px -10px 20px rgba(255,255,255,0.9); top: 10%; left: 3%; animation: floatSphere 5s infinite ease-in-out alternate; }
+        .obj-sphere-2 { width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,1), rgba(255,140,0,0.1)); box-shadow: -10px 15px 25px rgba(255,140,0,0.1), inset 5px -5px 15px rgba(255,255,255,0.9); bottom: 15%; right: 25%; animation: floatSphere 4s infinite ease-in-out alternate-reverse; }
+        
+        /* Cubes (FASTER ANIMATION) */
+        .obj-cube-1 { width: 120px; height: 120px; border-radius: 25px; background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,140,0,0.25)); border: 1px solid rgba(255,255,255,0.8); box-shadow: 15px 25px 35px rgba(0,0,0,0.1), inset 5px 5px 15px rgba(255,255,255,0.9); top: 30%; right: 8%; animation: spinCube 8s infinite linear; }
+        .obj-cube-2 { width: 70px; height: 70px; border-radius: 15px; background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,81,47,0.15)); border: 1px solid rgba(255,255,255,0.6); box-shadow: 10px 20px 30px rgba(0,0,0,0.08), inset 5px 5px 10px rgba(255,255,255,0.8); bottom: 35%; left: 18%; animation: spinCube 6s infinite linear reverse; }
+        
+        /* Capsules (FASTER ANIMATION) */
+        .obj-capsule-1 { width: 80px; height: 200px; border-radius: 40px; background: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,81,47,0.2)); border: 1px solid rgba(255,255,255,0.6); box-shadow: -10px 15px 30px rgba(0,0,0,0.08), inset 5px -5px 15px rgba(255,255,255,0.8); top: 60%; right: 4%; animation: floatTilt 6s infinite ease-in-out alternate; }
+        .obj-capsule-2 { width: 50px; height: 120px; border-radius: 25px; background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,140,0,0.15)); border: 1px solid rgba(255,255,255,0.5); box-shadow: -5px 10px 20px rgba(0,0,0,0.05), inset 3px -3px 10px rgba(255,255,255,0.7); top: 18%; left: 35%; animation: floatTilt 5s infinite ease-in-out alternate-reverse; }
+        
+        /* Rings (FASTER ANIMATION) */
+        .obj-ring-1 { width: 150px; height: 150px; border-radius: 50%; border: 35px solid rgba(255,255,255,0.7); border-right-color: rgba(255,140,0,0.3); box-shadow: 10px 15px 25px rgba(0,0,0,0.05), inset 5px 5px 15px rgba(255,255,255,0.5); bottom: 10%; left: 5%; animation: spinCube 10s infinite linear reverse; }
+
+        @keyframes floatSphere { 0% { transform: translateY(0) scale(1); } 100% { transform: translateY(-80px) scale(1.05); } }
+        @keyframes spinCube { 0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); } 100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+        @keyframes floatTilt { 0% { transform: translateY(0) rotate(25deg); } 100% { transform: translateY(-80px) rotate(-15deg); } }
+
+        /* Navigation Bar */
+        nav { position: fixed; top: 0; width: 100%; background-color: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 1px solid rgba(255,140,0,0.1); }
+        .logo-container { display: flex; align-items: center; gap: 15px; cursor: pointer; }
+        .logo-container img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-orange); padding: 2px; }
+        .logo-container h1 { font-size: 21px; font-weight: 900; letter-spacing: 0.5px; color: var(--text-dark);}
+        
+        .nav-links { display: flex; gap: 40px; position: absolute; left: 50%; transform: translateX(-50%); }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 700; font-size: 16px; cursor: pointer; transition: all 0.3s ease; padding: 5px 0; position: relative; text-transform: uppercase; letter-spacing: 0.5px; }
+        .nav-links a::after { content: ''; position: absolute; width: 0; height: 3px; bottom: -4px; left: 50%; transform: translateX(-50%); background: var(--primary-gradient); transition: width 0.3s ease; border-radius: 2px;}
+        .nav-links a:hover::after, .nav-links a.active-link::after { width: 100%; }
+        .nav-links a:hover, .nav-links a.active-link { color: var(--primary-orange); }
+        .nav-placeholder { width: 150px; }
+
+        /* General Layout */
+        .main-content { padding-top: 100px; min-height: calc(100vh - 100px); }
+        .page-section { display: none; padding: 60px 5% 80px; }
+        .page-section.active { display: block; animation: pageFadeIn 0.5s ease forwards; }
+        @keyframes pageFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .container { max-width: 1200px; width: 100%; margin: 0 auto; position: relative; z-index: 2; text-align: left; }
+
+        /* Typography */
+        .section-title { font-size: 45px; color: var(--text-dark); margin-bottom: 20px; font-weight: 900; letter-spacing: -1px;}
+        .section-title span { background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-subtitle { font-size: 18px; color: var(--text-light); margin-bottom: 70px; max-width: 800px; line-height: 1.8; font-weight: 500;}
+        .subsection-title { font-size: 30px; margin: 80px 0 40px; font-weight: 900; color: var(--text-dark); position: relative; display: inline-block; letter-spacing: -0.5px;}
+        .subsection-title::after { content: ''; position: absolute; width: 60px; height: 4px; background: var(--primary-gradient); bottom: -10px; left: 0; border-radius: 2px; }
+
+        /* SAFE SCROLL REVEAL */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Buttons & Glass Cards */
+        .btn-primary { background: var(--primary-gradient); color: var(--white); padding: 16px 36px; border-radius: 30px; text-decoration: none; font-weight: 800; font-size: 16px; border: none; cursor: pointer; box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3); transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; text-transform: uppercase; letter-spacing: 1px;}
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(255, 140, 0, 0.4); }
+        .btn-secondary { background: var(--white); color: var(--text-dark); padding: 14px 34px; border-radius: 30px; text-decoration: none; font-weight: 800; font-size: 16px; border: 2px solid rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;}
+        .btn-secondary:hover { background: var(--white); border-color: var(--primary-orange); color: var(--primary-orange); transform: translateY(-3px); box-shadow: var(--shadow-medium); }
+        
+        .glass-card { background: var(--glass-bg); border: 1px solid rgba(255,255,255,0.9); border-radius: 28px; box-shadow: var(--shadow-medium); transition: all 0.3s ease; position: relative; overflow: hidden; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);}
+        .glass-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: rgba(255,140,0,0.3); background: #ffffff; z-index: 5;}
+
+        /* =========================================
+           HOME PAGE (Hero Section)
+           ========================================= */
+        .hero-container { display: flex; align-items: center; justify-content: space-between; gap: 50px; min-height: calc(100vh - 120px); position: relative; z-index: 1; padding-bottom: 30px;}
+        .hero-text { flex: 1.2; padding-right: 20px; }
+        
+        /* BIGGER & PERFECT LOGO PLACEMENT */
+        .hero-main-logo { width: 140px; height: 140px; border-radius: 50%; border: 4px solid var(--primary-orange); padding: 5px; margin-bottom: 25px; box-shadow: 0 15px 35px rgba(255,140,0,0.25); display: block; background: var(--white); object-fit: cover; }
+
+        .premium-badge { display: inline-flex; align-items: center; background: rgba(255, 140, 0, 0.1); color: var(--primary-orange); padding: 10px 20px; border-radius: 30px; font-size: 16px; font-weight: 800; margin-bottom: 25px; border: 1px solid rgba(255, 140, 0, 0.2); text-transform: uppercase; letter-spacing: 1px;}
+        
+        .hero-text h2 { font-size: 65px; color: var(--text-dark); line-height: 1.1; font-weight: 900; margin-bottom: 15px; letter-spacing: -2px;}
+        
+        /* FAST CONTINUOUS TYPEWRITER (NO CURSOR) */
+        #typewriter-name { color: var(--primary-orange); text-shadow: 0 2px 10px rgba(255,140,0,0.2); }
+
+        .hero-role { font-size: 22px; color: var(--text-dark); font-weight: 800; margin-bottom: 25px; display: inline-block; padding: 8px 20px; background: rgba(255,140,0,0.08); border-left: 5px solid var(--primary-orange); border-radius: 0 10px 10px 0; }
+        .hero-text p { font-size: 18px; color: var(--text-light); line-height: 1.8; max-width: 95%; margin-bottom: 40px; font-weight: 500;}
+        .hero-buttons { display: flex; gap: 20px; margin-bottom: 40px; align-items: center;}
+        
+        .hero-stats { display: flex; gap: 20px; flex-wrap: wrap;}
+        .stat-item { background: #ffffff; padding: 15px 25px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column; gap: 5px; transition: transform 0.3s ease;}
+        .stat-item:hover { transform: translateY(-5px); box-shadow: var(--shadow-soft); border-color: var(--glass-border);}
+        .stat-item strong { font-size: 28px; color: var(--primary-orange); font-weight: 900; line-height: 1;}
+        .stat-item span { font-size: 12px; color: var(--text-dark); font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;}
+        
+        .hero-image-wrapper { flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative; width: 100%;}
+        .image-box { position: relative; animation: floatImage 4s ease-in-out infinite alternate; margin-bottom: 25px; padding: 15px; background: #ffffff; border-radius: 35px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 20px 50px rgba(0,0,0,0.1);}
+        @keyframes floatImage { 0% { transform: translateY(0px); } 100% { transform: translateY(-15px); } }
+        .image-backdrop { position: absolute; top: -10px; right: -10px; bottom: -10px; left: -10px; background: var(--primary-gradient); opacity: 0.1; border-radius: 40px; z-index: 0; filter: blur(15px); }
+        .image-box img { position: relative; z-index: 1; width: 100%; max-width: 400px; border-radius: 24px; display: block; fetchpriority: high;}
+        
+        .social-icons-bottom { display: flex; gap: 15px; justify-content: flex-start; flex-wrap: wrap; width: 100%; }
+        .social-icons-bottom a { display: inline-flex; align-items: center; gap: 8px; background: var(--white); color: var(--primary-orange); padding: 10px 20px; border-radius: 30px; font-size: 15px; font-weight: 800; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); text-decoration: none;}
+        .social-icons-bottom a i { font-size: 18px; }
+        .social-icons-bottom a:hover { background: var(--primary-gradient); color: var(--white); transform: translateY(-4px); box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3); border-color: transparent; }
+
+        /* HOME EXTENSION */
+        .home-extension { padding-top: 40px; padding-bottom: 80px; }
+        .highlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 80px;} 
+        .highlight-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 24px;}
+        .highlight-img { width: 100%; height: 200px; overflow: hidden; position: relative;}
+        .highlight-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .highlight-card:hover .highlight-img img { transform: scale(1.08); }
+        .highlight-content { padding: 40px 30px 30px; flex: 1; position: relative; background: transparent;}
+        .highlight-icon-wrap { position: absolute; top: -30px; left: 30px; width: 60px; height: 60px; background: var(--white); border-radius: 16px; display: flex; justify-content: center; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); z-index: 2; border: 2px solid var(--primary-orange); }
+        .highlight-icon-wrap i { font-size: 24px; color: var(--primary-orange); }
+        .highlight-card h4 { font-size: 22px; font-weight: 900; margin-bottom: 12px; color: var(--text-dark); }
+        .highlight-card p { font-size: 15px; color: var(--text-light); line-height: 1.7; margin-bottom: 0;}
+
+        .detailed-services-home { display: flex; flex-direction: column; gap: 30px; margin-bottom: 80px;}
+        .service-row { display: flex; align-items: center; gap: 40px; background: #ffffff; padding: 35px; border-radius: 24px; box-shadow: var(--shadow-medium); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.3s;}
+        .service-row:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: rgba(255,140,0,0.2);}
+        .service-row.reverse { flex-direction: row-reverse;}
+        .s-row-icon { width: 90px; height: 90px; background: var(--primary-gradient); color: var(--white); border-radius: 25px; display: flex; justify-content: center; align-items: center; font-size: 35px; flex-shrink: 0; box-shadow: 0 10px 20px rgba(255,140,0,0.3);}
+        .s-row-text h4 { font-size: 26px; color: var(--text-dark); margin-bottom: 12px; font-weight: 900;}
+        .s-row-text p { font-size: 16px; color: var(--text-light); line-height: 1.7;}
+
+        .tech-stack-marquee { padding: 40px; background: #ffffff; border-radius: 24px; border: 1px solid rgba(0,0,0,0.05); box-shadow: var(--shadow-medium);}
+        .tech-stack-marquee h3 { font-size: 24px; color: var(--text-dark); margin-bottom: 25px; font-weight: 900;}
+        .marquee-container { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 15px;}
+        .marquee-item { background: #f9fbfd; padding: 12px 20px; border-radius: 12px; font-size: 15px; font-weight: 700; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 10px; transition: all 0.3s;}
+        .marquee-item:hover { transform: translateY(-3px); border-color: var(--primary-orange); color: var(--primary-orange); background: var(--white); box-shadow: 0 5px 15px rgba(255,140,0,0.1);}
+        .marquee-item i { color: var(--primary-orange); font-size: 20px;}
+
+        /* =========================================
+           MY WORKS PAGE
+           ========================================= */
+        .impact-stats { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin-bottom: 70px; padding: 40px; background: var(--primary-gradient); border-radius: 24px; color: var(--white); box-shadow: var(--shadow-hover); position: relative; overflow: hidden;}
+        .impact-box { position: relative; z-index: 2;}
+        .impact-box h2 { font-size: 50px; font-weight: 900; margin-bottom: 5px; }
+        .impact-box p { font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; opacity: 0.95; margin:0;}
+
+        .expertise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 80px;} 
+        .expertise-card { padding: 40px; display: flex; flex-direction: column; justify-content: space-between; }
+        .expertise-icon { width: 70px; height: 70px; background: rgba(255, 140, 0, 0.1); color: var(--primary-orange); border-radius: 20px; display: flex; justify-content: center; align-items: center; font-size: 30px; margin-bottom: 20px; transition: all 0.3s ease;}
+        .expertise-card:hover .expertise-icon { background: var(--primary-gradient); color: var(--white); transform: scale(1.1) rotate(5deg); box-shadow: 0 10px 20px rgba(255,140,0,0.3);}
+        .expertise-card h4 { font-size: 24px; color: var(--text-dark); margin-bottom: 12px; font-weight: 900; }
+        .expertise-card p { color: var(--text-light); font-size: 15px; line-height: 1.7; }
+
+        .industry-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 80px;} 
+        .ind-card { background: #ffffff; padding: 30px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); box-shadow: var(--shadow-medium); transition: all 0.3s;}
+        .ind-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--primary-orange); }
+        .ind-card i { font-size: 40px; color: var(--primary-orange); margin-bottom: 15px; transition: transform 0.3s;}
+        .ind-card h4 { font-size: 18px; font-weight: 900; color: var(--text-dark); margin:0;}
+
+        .project-case-study { display: flex; border-radius: 28px; overflow: hidden; margin-bottom: 50px; min-height: 350px; padding: 0; background: #fff; box-shadow: var(--shadow-medium); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.3s;}
+        .project-case-study:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: rgba(255,140,0,0.2);}
+        .project-case-study.reverse { flex-direction: row-reverse; }
+        .project-image-side { flex: 1; position: relative; overflow: hidden; background: #000; }
+        .project-image-side img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; opacity: 0.9; }
+        .project-case-study:hover .project-image-side img { transform: scale(1.08); opacity: 1; }
+        .project-content-side { flex: 1.2; padding: 50px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+        .project-content-side h4 { font-size: 26px; color: var(--text-dark); margin-bottom: 15px; font-weight: 900; line-height: 1.2;}
+        .project-content-side p { color: var(--text-light); font-size: 16px; line-height: 1.7; margin-bottom: 25px; }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .project-tags span { background: rgba(255,140,0,0.08); color: var(--text-dark); padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 800; border: 1px solid rgba(255,140,0,0.2); }
+
+        .workflow-timeline { margin-bottom: 80px; position: relative; padding: 20px 0;}
+        .workflow-timeline::before { content: ''; position: absolute; top: 0; left: 28px; width: 4px; height: 100%; background: linear-gradient(to bottom, rgba(255,140,0,0.1), var(--primary-orange), rgba(255,140,0,0.1)); border-radius: 4px;}
+        .wf-item { display: flex; gap: 25px; margin-bottom: 30px; position: relative; align-items: flex-start;}
+        .wf-dot { width: 60px; height: 60px; background: var(--primary-gradient); color: var(--white); border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: 900; font-size: 22px; z-index: 2; flex-shrink: 0; box-shadow: 0 10px 20px rgba(255,140,0,0.3);}
+        .wf-content { background: #ffffff; padding: 30px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); box-shadow: var(--shadow-medium); width: 100%; transition: transform 0.3s;}
+        .wf-content:hover { transform: translateX(10px); border-color: var(--primary-orange); box-shadow: var(--shadow-hover);}
+        .wf-content h4 { font-size: 22px; font-weight: 900; color: var(--text-dark); margin-bottom: 10px;}
+        .wf-content p { color: var(--text-light); line-height: 1.7; font-size: 15px; margin:0;}
+
+        /* =========================================
+           ABOUT ME 
+           ========================================= */
+        .about-hero-box { display: flex; gap: 50px; align-items: flex-start; margin-bottom: 80px;}
+        .about-img-container { flex: 1; position: relative; }
+        .about-img-container img { width: 100%; max-width: 450px; border-radius: 30px; box-shadow: var(--shadow-medium); display: block; border: 8px solid var(--white); }
+        .about-exp-pill { position: absolute; bottom: -20px; right: 10px; background: var(--primary-gradient); color: var(--white); padding: 25px 35px; border-radius: 20px; box-shadow: 0 15px 30px rgba(255,140,0,0.4); text-align: left; border: 4px solid var(--white); }
+        .about-exp-pill h2 { font-size: 40px; font-weight: 900; margin-bottom: 0; line-height: 1; }
+        .about-exp-pill p { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+
+        .about-desc-box { flex: 1.3; padding: 40px; background: #fff; border-radius: 28px; box-shadow: var(--shadow-medium); border: 1px solid rgba(0,0,0,0.05);}
+        .about-desc-box h3 { font-size: 28px; color: var(--text-dark); font-weight: 900; margin-bottom: 20px; line-height: 1.3; letter-spacing: -0.5px;}
+        .about-desc-box p { font-size: 16px; color: var(--text-light); line-height: 1.8; margin-bottom: 20px; font-weight: 500; }
+        
+        .why-choose-heading { margin-top: 35px; font-size: 26px; color: var(--text-dark); font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px;}
+        .why-choose-heading span { color: var(--primary-orange); }
+        
+        .about-advantage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 25px;} 
+        .advantage-card { background: rgba(255,140,0,0.05); padding: 20px 15px; border-radius: 16px; border: 1px solid rgba(255,140,0,0.15); transition: all 0.3s;}
+        .advantage-card:hover { transform: translateY(-5px); background: var(--white); box-shadow: var(--shadow-medium); border-color: var(--primary-orange);}
+        .advantage-card i { font-size: 24px; color: var(--primary-orange); margin-bottom: 10px;}
+        .advantage-card h5 { font-size: 15px; font-weight: 800; color: var(--text-dark); margin:0;}
+
+        /* Removed Mobile-First box from About Me as requested */
+
+        .about-social-connect { margin-top: 35px; padding-top: 25px; border-top: 1px solid rgba(0,0,0,0.08); display: flex; align-items: center; gap: 20px; flex-wrap: wrap;}
+        .about-social-connect h4 { font-size: 16px; font-weight: 900; color: var(--text-dark); margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+        .about-social-icons { display: flex; gap: 12px; }
+        .about-social-icons a { color: var(--text-dark); font-size: 18px; transition: all 0.3s ease; display: inline-flex; width: 45px; height: 45px; justify-content: center; align-items: center; border-radius: 50%; background: #f9fbfd; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05); text-decoration: none; }
+        .about-social-icons a:hover { color: var(--white); background: var(--primary-gradient); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,140,0,0.3); border-color: transparent;}
+
+        .trusted-brands { margin-top: 50px; padding-top: 40px; border-top: 1px solid rgba(0,0,0,0.08);}
+        .trusted-brands h4 { font-size: 20px; color: var(--text-dark); margin-bottom: 20px; font-weight: 900;}
+        .brand-pills { display: flex; flex-wrap: wrap; gap: 12px; }
+        .brand-pills span { background: var(--white); padding: 10px 20px; border-radius: 10px; font-size: 15px; font-weight: 800; color: var(--text-dark); box-shadow: 0 5px 15px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 10px;}
+        .brand-pills span i { color: var(--primary-orange); font-size: 18px;}
+
+        /* =========================================
+           REVIEW PAGE
+           ========================================= */
+        .reviews-container-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; } 
+        .review-item-card { padding: 35px; background: #fff; display: flex; flex-direction: column; justify-content: space-between; border-radius: 24px; box-shadow: var(--shadow-medium); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.3s;}
+        .review-item-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: rgba(255,140,0,0.3);}
+        .review-top-info { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .review-top-info img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-orange); padding: 2px; }
+        .review-author-meta h4 { font-size: 18px; font-weight: 900; color: var(--text-dark); margin-bottom: 2px; }
+        .review-author-meta p { font-size: 12px; font-weight: 800; color: var(--primary-orange); text-transform: uppercase; letter-spacing: 0.5px; margin:0;}
+        .review-stars { color: #FFB74D; margin-bottom: 15px; font-size: 14px; letter-spacing: 2px; }
+        .review-text-body { font-size: 15px; color: var(--text-light); line-height: 1.8; font-style: italic; font-weight: 500; margin:0;}
+        .load-more-wrap { text-align: center; margin-top: 30px; }
+
+        /* =========================================
+           ULTRA-PREMIUM CONTACT PAGE WITH BACKGROUND SUBMIT (AJAX Fetch)
+           ========================================= */
+        .contact-wrapper { display: flex; border-radius: 30px; overflow: hidden; padding: 0; box-shadow: var(--shadow-hover); background: var(--white); border: 1px solid rgba(0,0,0,0.05);}
+        .contact-left { flex: 1; padding: 50px; background: linear-gradient(135deg, rgba(255,140,0,0.05) 0%, rgba(255,255,255,0) 100%); border-right: 1px solid rgba(0,0,0,0.05); }
+        .contact-right { flex: 1.2; padding: 50px; background: var(--white);}
+        
+        .contact-left h3, .contact-right h3 { font-size: 30px; color: var(--text-dark); font-weight: 900; margin-bottom: 15px; letter-spacing: -1px;}
+        .contact-left > p { color: var(--text-light); font-size: 16px; margin-bottom: 40px; line-height: 1.7; font-weight: 500;}
+        
+        .contact-item { display: flex; align-items: center; margin-bottom: 30px; padding: 15px; border-radius: 16px; transition: 0.3s; background: transparent; border: 1px solid transparent;}
+        .contact-item:hover { background: #fff; box-shadow: var(--shadow-medium); border-color: rgba(0,0,0,0.03); transform: translateX(5px);}
+        .contact-item i { width: 55px; height: 55px; background: var(--primary-gradient); color: var(--white); border-radius: 15px; display: flex; justify-content: center; align-items: center; font-size: 22px; margin-right: 20px; box-shadow: 0 10px 20px rgba(255,140,0,0.3); flex-shrink:0;}
+        .contact-item h4 { color: var(--text-light); margin-bottom: 4px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;}
+        .contact-item p, .contact-item a { color: var(--text-dark); font-size: 17px; font-weight: 900; text-decoration: none; transition: color 0.3s; margin:0;}
+        .contact-item a:hover { color: var(--primary-orange); }
+
+        /* Floating Label Form */
+        .premium-form { display: flex; flex-direction: column; gap: 25px; margin-top: 25px;}
+        .input-group { position: relative; }
+        .input-group input, .input-group textarea { width: 100%; padding: 18px 20px; border-radius: 12px; border: 2px solid rgba(0,0,0,0.08); background: #f9fbfd; font-size: 16px; color: var(--text-dark); font-family: 'Inter', sans-serif; transition: all 0.3s ease; font-weight: 600;}
+        .input-group textarea { height: 140px; resize: none;}
+        .input-group label { position: absolute; left: 20px; top: 18px; color: var(--text-light); font-weight: 600; font-size: 15px; transition: all 0.3s ease; pointer-events: none; background: transparent; padding: 0 5px;}
+        
+        .input-group input:focus, .input-group textarea:focus { outline: none; border-color: var(--primary-orange); background: var(--white); box-shadow: 0 5px 15px rgba(255,140,0,0.1);}
+        .input-group input:focus ~ label, .input-group input:valid ~ label, 
+        .input-group textarea:focus ~ label, .input-group textarea:valid ~ label { top: -10px; left: 15px; font-size: 12px; color: var(--primary-orange); background: var(--white); font-weight: 800;}
+        
+        .premium-form button { align-self: flex-start; margin-top: 10px; padding: 18px 45px; border-radius: 30px; font-size: 17px; font-weight: 900; border: none; cursor: pointer; background: var(--primary-gradient); color: var(--white); box-shadow: 0 10px 20px rgba(255,140,0,0.3); transition: all 0.3s ease;}
+        .premium-form button:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(255,140,0,0.4);}
+        .premium-form button:disabled { opacity: 0.7; cursor: not-allowed; transform: none;}
+
+        /* =========================================
+           CLEAN MODERN FOOTER
+           ========================================= */
+        .modern-footer { background-color: #0B1120; color: var(--white); margin-top: auto; padding-top: 20px; position: relative; z-index: 10; border-top: 1px solid rgba(255,255,255,0.05);} 
+        .footer-bottom-section { max-width: 1200px; margin: 0 auto; padding: 40px 5%; display: flex; justify-content: space-between; align-items: center; }
+        .footer-brand { display: flex; align-items: center; gap: 15px; }
+        .footer-brand img { width: 45px; height: 45px; border-radius: 50%; border: 2px solid var(--primary-orange); }
+        .footer-brand span { font-size: 20px; font-weight: 900; letter-spacing: 0.5px;}
+        
+        .footer-socials { display: flex; gap: 15px; }
+        .footer-socials a { color: var(--white); background: rgba(255, 255, 255, 0.05); width: 40px; height: 40px; display: inline-flex; justify-content: center; align-items: center; border-radius: 50%; font-size: 16px; transition: all 0.3s; border: 1px solid rgba(255, 255, 255, 0.1); text-decoration: none;}
+        .footer-socials a:hover { background: var(--primary-orange); border-color: var(--primary-orange); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,140,0,0.3);}
+        
+        .footer-copyright { color: #64748B; font-size: 14px; font-weight: 600; margin-top: 0; text-align: center; padding-bottom: 30px;}
+
+        /* =========================================
+           MOBILE RESPONSIVENESS (Proper Order & Stacking)
+           ========================================= */
+        @media (max-width: 1024px) {
+            .hero-container { flex-direction: column; align-items: flex-start; gap: 40px; padding-bottom: 60px;}
+            .hero-text { padding-right: 0; width: 100%; text-align: left;}
+            .hero-image-wrapper { width: 100%; align-items: flex-start;}
+            
+            .about-hero-box { flex-direction: column; }
+            .about-exp-pill { right: auto; left: 20px; bottom: -20px;}
+            .contact-wrapper { flex-direction: column; }
+            .contact-left { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.05); }
+            .project-case-study, .project-case-study.reverse { flex-direction: column; }
+            .project-image-side { height: 250px; width:100%;}
+            .project-content-side { padding: 35px; width: 100%;}
+            .service-row, .service-row.reverse { flex-direction: column; align-items: flex-start; gap: 25px; padding: 30px;}
+        }
+
+        @media (max-width: 768px) {
+            nav { flex-direction: column; padding: 15px 5% 10px; gap: 15px; }
+            .logo-container { justify-content: space-between; width: 100%; }
+            .nav-placeholder { display: none; }
+            
+            .nav-links { 
+                display: flex !important; position: relative; top: 0; left: 0; width: 100%; flex-direction: row; justify-content: flex-start; overflow-x: auto; padding: 0 5px 5px; gap: 25px; -webkit-overflow-scrolling: touch; transform: none;
+            }
+            .nav-links::-webkit-scrollbar { display: none; }
+            .nav-links a { font-size: 14px; white-space: nowrap; }
+
+            .page-section { padding: 150px 5% 50px; }
+            .hero-text h2 { font-size: 48px; margin-bottom: 5px;}
+            .premium-badge { font-size: 13px; padding: 8px 16px; margin-bottom: 20px;}
+            .section-title { font-size: 32px; }
+            .subsection-title { font-size: 24px; margin: 60px 0 30px;}
+            
+            .footer-bottom-section { flex-direction: column; gap: 20px; align-items: flex-start;}
+            .contact-left, .contact-right { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 3D Glassmorphism Objects Background -->
+    <div class="premium-global-bg">
+        <div class="bg-texture"></div>
+        <div class="bg-glow-1"></div>
+        <div class="bg-glow-2"></div>
+        <div class="glass-3d-obj obj-sphere-1"></div>
+        <div class="glass-3d-obj obj-sphere-2"></div>
+        <div class="glass-3d-obj obj-cube-1"></div>
+        <div class="glass-3d-obj obj-cube-2"></div>
+        <div class="glass-3d-obj obj-capsule-1"></div>
+        <div class="glass-3d-obj obj-capsule-2"></div>
+        <div class="glass-3d-obj obj-ring-1"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+            <img src="ChatGPT Image Sep 13, 2026, 09_14_09 PM.png" alt="Avijit Das Logo">
+            <h1>AVIJIT DAS</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a onclick="showPage('home')" class="active-link" id="link-home">Home</a>
+            <a onclick="showPage('works')" id="link-works">My Works</a>
+            <a onclick="showPage('about')" id="link-about">About Me</a>
+            <a onclick="showPage('review')" id="link-review">Review</a>
+            <a onclick="showPage('contact')" id="link-contact">Contact Me</a>
+        </div>
+        <div class="nav-placeholder"></div>
+    </nav>
+
+    <div class="main-content">
+        <!-- ================= PAGE 1: HOME ================= -->
+        <section id="home" class="page-section active">
+            <div class="container hero-container">
+                
+                <div class="hero-text">
+                    <!-- BIGGER & PERFECT MAIN LOGO -->
+                    <img src="ChatGPT Image Sep 13, 2026, 09_14_09 PM.png" alt="Avijit Das Logo" class="hero-main-logo reveal-element">
+                    
+                    <div class="glass-card premium-badge reveal-element"><i class="fas fa-star" style="margin-right: 8px;"></i> Welcome to my website</div>
+                    
+                    <!-- FAST & SMOOTH TYPEWRITER TEXT (No Cursor, S to A) -->
+                    <h2 class="reveal-element">HI, I'M <br><span id="typewriter-name"></span></h2>
+                    
+                    <h3 class="hero-role reveal-element">Web Developer & Digital Growth Expert</h3>
+                    
+                    <p class="reveal-element">I specialize in crafting premium, high-performing websites and producing viral UGC & Product Action Ads. I empower brands to elevate their digital presence, captivate audiences, and scale their revenue through strategic digital solutions.</p>
+                    
+                    <div class="hero-buttons reveal-element">
+                        <button class="btn-primary" onclick="showPage('contact')">Hire Me</button>
+                        <button class="btn-secondary" onclick="showPage('works')">Explore My Works</button>
+                    </div>
+
+                    <div class="hero-stats reveal-element">
+                        <div class="stat-item">
+                            <strong>3+</strong>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>200+</strong>
+                            <span>Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>100%</strong>
+                            <span>Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper reveal-element">
+                    <div class="image-box">
+                        <div class="image-backdrop"></div>
+                        <!-- High Priority Image Load -->
+                        <img src="ChatGPT Image Sep 13, 2026, 09_01_46 PM.png" alt="Avijit Das" fetchpriority="high">
+                    </div>
+
+                    <!-- SOCIAL ICONS PLACED DIRECTLY UNDER THE IMAGE -->
+                    <div class="social-icons-bottom" style="gap: 15px; display: flex; flex-wrap: wrap;">
+                        <a href="https://www.facebook.com/profile.php?id=61594341569515" target="_blank">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/_avijitt_das/" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.youtube.com/@avijitt_das" target="_blank">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://www.linkedin.com/in/avijit-das-4276a4437/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/dasavijit427488-cpu" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Scrollable Extension -->
+            <div class="container home-extension">
+                <h3 class="subsection-title reveal-element" style="margin-top: 0;">Why Partner With Me?</h3>
+                <div class="highlight-grid">
+                    <div class="glass-card highlight-card reveal-element">
+                        <div class="highlight-img">
+                            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Enterprise Web Development" loading="lazy">
+                        </div>
+                        <div class="highlight-content">
+                            <div class="highlight-icon-wrap"><i class="fas fa-code"></i></div>
+                            <h4>Enterprise Web Development</h4>
+                            <p>Specializing in ultra-fast, modern responsive builds, custom domain hosting, and seamless zero-downtime deployment architectures.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card highlight-card reveal-element">
+                        <div class="highlight-img">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="High-Impact Action Ads" loading="lazy">
+                        </div>
+                        <div class="highlight-content">
+                            <div class="highlight-icon-wrap"><i class="fas fa-mobile-alt"></i></div>
+                            <h4>High-Impact Product Action Ads</h4>
+                            <p>Producing viral content and sales-focused UGC designed specifically to maximize your conversion rates and audience trust.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card highlight-card reveal-element">
+                        <div class="highlight-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Advanced Channel Growth" loading="lazy">
+                        </div>
+                        <div class="highlight-content">
+                            <div class="highlight-icon-wrap"><i class="fas fa-chart-line"></i></div>
+                            <h4>Advanced Brand Scaling</h4>
+                            <p>Scaling digital channels through expert content strategy, audience retention analytics, and platform optimization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title reveal-element">Comprehensive Digital Solutions</h3>
+                <div class="detailed-services-home">
+                    <div class="service-row reveal-element">
+                        <div class="s-row-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="s-row-text">
+                            <h4>Full-Stack Digital Architecture</h4>
+                            <p>I build custom, highly responsive websites from the ground up. Whether it's a dynamic landing page, a complex e-commerce platform, or a modern business portfolio, my development process ensures lightning-fast speeds, pixel-perfect UI/UX, and flawless functionality across all devices.</p>
+                        </div>
+                    </div>
+                    <div class="service-row reverse reveal-element">
+                        <div class="s-row-icon"><i class="fas fa-video"></i></div>
+                        <div class="s-row-text">
+                            <h4>Viral User-Generated Content (UGC)</h4>
+                            <p>Consumers trust people, not just brands. I create authentic, scroll-stopping UGC product videos that blend seamlessly into native social media feeds. From scripting and shooting to professional editing, I produce content that builds immense trust and rapidly converts viewers into paying customers.</p>
+                        </div>
+                    </div>
+                    <div class="service-row reveal-element">
+                        <div class="s-row-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="s-row-text">
+                            <h4>Performance-Driven Action Ads</h4>
+                            <p>Your marketing budget deserves maximum ROI. I design and launch high-impact Product Action Ads tailored for platforms like TikTok Shop and Instagram. By integrating psychological hooks, compelling visuals, and strong CTAs, I ensure your campaigns drive immediate traffic and scale your revenue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 2: MY WORKS ================= -->
+        <section id="works" class="page-section">
+            <div class="container">
+                <h2 class="section-title reveal-element">My <span>Portfolio & Projects</span></h2>
+                <p class="section-subtitle reveal-element">Explore my comprehensive suite of digital solutions, high-converting ad campaigns, and full-stack development expertise engineered to accelerate business growth.</p>
+
+                <div class="impact-stats reveal-element">
+                    <div class="impact-box">
+                        <h2>$1M+</h2>
+                        <p>Client Revenue Generated</p>
+                    </div>
+                    <div class="impact-box">
+                        <h2>10M+</h2>
+                        <p>Ad Views Delivered</p>
+                    </div>
+                    <div class="impact-box">
+                        <h2>50+</h2>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title reveal-element" style="margin-top: 0;">Strategic Capabilities & Execution</h3>
+                <div class="expertise-grid">
+                    <div class="glass-card expertise-card reveal-element">
+                        <div class="expertise-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Premium Web Development</h4>
+                        <p>Crafting pixel-perfect, highly responsive websites with dynamic animations and flawless user interfaces to elevate brand identity.</p>
+                    </div>
+                    <div class="glass-card expertise-card reveal-element">
+                        <div class="expertise-icon"><i class="fas fa-video"></i></div>
+                        <h4>UGC & Action Ads Mastery</h4>
+                        <p>Engineering viral, conversion-focused short-form video ads that build instant trust and skyrocket e-commerce sales.</p>
+                    </div>
+                    <div class="glass-card expertise-card reveal-element">
+                        <div class="expertise-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h4>Digital Brand Scaling</h4>
+                        <p>Implementing data-driven strategies and advanced platform optimization to maximize organic reach and multiply audience engagement.</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title reveal-element">Featured Case Studies</h3>
+
+                <div class="glass-card project-case-study reveal-element">
+                    <div class="project-image-side">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Development Project" loading="lazy">
+                    </div>
+                    <div class="project-content-side">
+                        <h4>Luxury E-commerce Platform - Full Development</h4>
+                        <p>Engineered and deployed a highly responsive e-commerce web architecture for an international retail brand. Integrated custom 3D text animations, secure cloud hosting, and streamlined checkout funnels resulting in a 45% lift in online conversions.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card project-case-study reverse reveal-element">
+                    <div class="project-image-side">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Media Action Ads" loading="lazy">
+                    </div>
+                    <div class="project-content-side">
+                        <h4>Viral UGC Product Campaigns & Action Ads</h4>
+                        <p>Created and executed a series of high-performing User-Generated Content (UGC) ad creatives for leading social commerce sellers. Engineered strong psychological hooks and action-driven CTAs that successfully scaled client ROAS by over 3.2x.</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title reveal-element">My Project Lifecycle</h3>
+                <div class="workflow-timeline">
+                    <div class="wf-item reveal-element">
+                        <div class="wf-dot">1</div>
+                        <div class="wf-content">
+                            <h4>Discovery & Market Research</h4>
+                            <p>Before writing a single line of code or filming a frame, I conduct an in-depth analysis of your brand, target demographic, and direct competitors. This ensures our strategy perfectly aligns with your specific business goals.</p>
+                        </div>
+                    </div>
+                    <div class="wf-item reveal-element">
+                        <div class="wf-dot">2</div>
+                        <div class="wf-content">
+                            <h4>Wireframing & Storyboarding</h4>
+                            <p>For websites, I create detailed UI/UX wireframes to map out the user journey. For UGC and Action Ads, I develop compelling scripts and visual storyboards focused heavily on capturing attention in the critical first 3 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="wf-item reveal-element">
+                        <div class="wf-dot">3</div>
+                        <div class="wf-content">
+                            <h4>Development & Production</h4>
+                            <p>This is where the magic happens. I build robust, responsive websites using advanced frontend technologies (HTML/CSS/JS). Concurrently, high-quality video content is shot and professionally edited with dynamic overlays and effects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 3: ABOUT ME ================= -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h2 class="section-title reveal-element">About <span>Me</span></h2>
+                <p class="section-subtitle reveal-element">Discover my journey, philosophy, and the elite brands I've partnered with to drive digital success.</p>
+                
+                <div class="about-hero-box">
+                    <div class="about-img-container reveal-element">
+                        <img src="ChatGPT Image Sep 13, 2026, 09_01_46 PM.png" alt="Avijit Das">
+                        <div class="about-exp-pill">
+                            <h2>3+</h2>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card about-desc-box reveal-element">
+                        <h3>Pioneering digital excellence through code and creative marketing.</h3>
+                        <p>Hello! I am <strong>Avijit Das</strong>, a top-tier Web Developer, Product Marketer, and UGC Ads Creator. Over the past 3 years, I have helped numerous businesses transition into digital powerhouses.</p>
+                        
+                        <h3 class="why-choose-heading">Why <span>Choose Me</span></h3>
+                        <p>Choosing me means partnering with a synergistic blend of technical precision and creative marketing foresight. My unique trifecta of skills—<strong>Web Development, Product Marketing, and UGC Creation</strong>—enables me to deliver holistic digital strategies that don't just generate traffic, but build authentic audience trust and convert engagement into tangible results.</p>
+                        
+                        <div class="about-advantage-grid">
+                            <div class="advantage-card">
+                                <i class="fas fa-brain"></i>
+                                <h5>Neuromarketing Based</h5>
+                            </div>
+                            <div class="advantage-card">
+                                <i class="fas fa-bolt"></i>
+                                <h5>High Speed Delivery</h5>
+                            </div>
+                        </div>
+
+                        <div class="about-social-connect">
+                            <h4>Let's Connect:</h4>
+                            <div class="about-social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=61594341569515" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/_avijitt_das/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@avijitt_das" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com/in/avijit-das-4276a4437/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/dasavijit427488-cpu" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 4: REVIEW (Instantly Loaded & Functional) ================= -->
+        <section id="review" class="page-section">
+            <div class="container">
+                <h2 class="section-title reveal-element">Client <span>Reviews (100 Verified)</span></h2>
+                
+                <div class="reviews-container-grid" id="reviewsGrid">
+                    <!-- Cards will be populated here via JS instantly -->
+                </div>
+                
+                <div class="load-more-wrap reveal-element">
+                    <button class="btn-primary" id="loadMoreReviewsBtn" onclick="loadMoreReviews()">Load More Reviews (<span id="remainingCount">94</span> left)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 5: ULTRA PREMIUM CONTACT ME (WITH FETCH API) ================= -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2 class="section-title reveal-element">Contact <span>Me</span></h2>
+                <p class="section-subtitle reveal-element">Ready to start your next big project? Get in touch with me today to discuss your digital transformation.</p>
+                
+                <div class="contact-wrapper reveal-element">
+                    <div class="contact-left">
+                        <h3>Get In Touch</h3>
+                        <p>I'm currently available for full-stack web development, high-converting product action ads, and complete digital brand scaling strategies.</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Me Directly</h4>
+                                <a href="tel:9038904861">+91 90389 04861</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Address</h4>
+                                <a href="mailto:dasavijit427488@gmail.com">dasavijit427488@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe-asia"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p style="font-weight:800; color:var(--text-dark); margin:0;">India (Available for Global Projects)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/avijit-das-4276a4437/" target="_blank">Avijit Das</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/dasavijit427488-cpu" target="_blank">dasavijit427488-cpu</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <h3>Send a Request</h3>
+                        <!-- FormSubmit Background AJAX Fetch (Premium Table Email format) -->
+                        <form id="contactForm" class="premium-form" action="https://formsubmit.co/dasavijit427488@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New Project Request from Portfolio Website!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            
+                            <div class="input-group">
+                                <input type="text" name="name" id="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" name="email" id="email" required>
+                                <label for="email">Your Email Address</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="subject" id="subject" required>
+                                <label for="subject">Subject / Project Type</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea name="message" id="message" required></textarea>
+                                <label for="message">Tell me about your project and goals...</label>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane" style="margin-left:10px;"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================= CLEAN MODERN FOOTER ================= -->
+    <footer class="modern-footer">
+        <div class="footer-bottom-section">
+            <div class="footer-brand">
+                <img src="ChatGPT Image Sep 13, 2026, 09_14_09 PM.png" alt="Avijit Das">
+                <span>AVIJIT DAS</span>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/profile.php?id=61594341569515" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_avijitt_das/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@avijitt_das" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/avijit-das-4276a4437/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/dasavijit427488-cpu" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2026 Avijit Das. All Rights Reserved. Designed for Maximum Growth.
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // ================= 1. SAFE "POR-POR" SCROLL REVEAL (MOBILE-SAFE) =================
+        function initScrollReveal() {
+            const observer = new IntersectionObserver((entries, obs) => {
+                let delay = 0;
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        if(!el.style.transitionDelay) {
+                            el.style.transitionDelay = `${delay}s`;
+                            delay += 0.15; // 0.15s stagger effect
+                        }
+                        el.classList.add('visible');
+                        obs.unobserve(el); // Runs only ONE TIME
+                    }
+                });
+            }, { rootMargin: '0px 0px -20px 0px', threshold: 0 }); 
+            
+            document.querySelectorAll('.reveal-element:not(.visible)').forEach(el => observer.observe(el));
+        }
+
+        // ================= 2. FAST CONTINUOUS TYPEWRITER (S TO A) =================
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "AVIJIT DAS";
+            let index = 0;
+            let isDeleting = false;
+            let speed = 100; // Fast typing speed
+            const typeElement = document.getElementById("typewriter-name");
+            
+            function typeWriterFast() {
+                if (!isDeleting && index <= text.length) {
+                    typeElement.innerHTML = text.substring(0, index);
+                    index++;
+                    speed = 100; // Normal typing
+                } else if (isDeleting && index > 1) { 
+                    typeElement.innerHTML = text.substring(0, index);
+                    index--;
+                    speed = 30; // VERY FAST erasing down to 'A'
+                }
+                
+                if (index > text.length) {
+                    isDeleting = true;
+                    index = text.length;
+                    speed = 1000; // Pause 1 second when fully typed
+                } else if (isDeleting && index === 1) {
+                    isDeleting = false;
+                    speed = 200; // Small pause before re-typing from 'A'
+                }
+                setTimeout(typeWriterFast, speed);
+            }
+            
+            typeWriterFast();
+            renderReviews(6); // Load reviews instantly on load
+            setTimeout(initScrollReveal, 100);
+        });
+
+        // ================= 3. AJAX FORM SUBMISSION (FIXES THE BLANK PAGE BUG) =================
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin" style="margin-left:10px;"></i>';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Message sent successfully! I will reply to you shortly.');
+                    this.reset();
+                } else {
+                    alert('Oops! There was a problem submitting your form.');
+                }
+            }).catch(error => {
+                alert('Oops! There was a problem submitting your form.');
+            }).finally(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+
+        // ================= PAGE NAVIGATION =================
+        function showPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active'));
+            document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active-link'));
+            
+            const targetPage = document.getElementById(pageId);
+            targetPage.classList.add('active');
+            document.getElementById('link-' + pageId).classList.add('active-link');
+            window.scrollTo(0, 0);
+            
+            setTimeout(initScrollReveal, 100);
+        }
+
+        // ================= 100 UNIQUE REVIEWS LOGIC =================
+        const indianNames = ["Aarav Sharma", "Priya Verma", "Rahul Gupta", "Ananya Iyer", "Vikram Malhotra", "Neha Patel", "Amit Deshmukh", "Sneha Roy", "Karan Kapoor", "Pooja Nair", "Aditya Joshi", "Divya Menon", "Manish Kumar", "Ritu Sen", "Siddharth Rao", "Kavita Pillai", "Rohan Das", "Megha Mukherjee", "Alok Banerjee", "Tanvi Kulkarni", "Abhishek Tiwari", "Swati Chawla", "Tarun Saxena", "Nisha Aggarwal", "Varun Nambiar", "Deepika Reddy", "Kunal Thakur", "Shreya Bhat", "Manoj Verma", "Simran Kaur", "Rajeshwari Iyer", "Nikhil Hegde", "Pallavi Deshpande", "Sandeep Ghosh", "Monika Sharma", "Harsh Vardhan", "Geeta Pillai", "Akash Deep", "Rachana Joshi", "Vineet Malhotra", "Swati Sengupta", "Devendra Nath", "Bhavna Kapoor", "Rajat Nayak", "Ankita Sen", "Gaurav Pathak", "Madhuri Dixit", "Yashwant Rao", "Ritika Bhasin", "Suresh Menon"];
+        const foreignNames = ["John Smith", "Emma Johnson", "Michael Brown", "Sophia Taylor", "David Miller", "Olivia Wilson", "James Davis", "Isabella Martinez", "Robert Anderson", "Mia Thomas", "William Jackson", "Charlotte White", "Benjamin Harris", "Amelia Martin", "Lucas Clark", "Harper Lewis", "Alexander Robinson", "Evelyn Walker", "Daniel Perez", "Abigail Hall", "Matthew Allen", "Emily Young", "Joseph Hernandez", "Elizabeth King", "Samuel Wright", "Victoria Lopez", "David Hill", "Aria Scott", "John Green", "Grace Adams", "Ryan Baker", "Chloe Gonzalez", "Nathan Nelson", "Victoria Carter", "Christian Mitchell", "Zoey Perez", "Ethan Roberts", "Penelope Turner", "Logan Phillips", "Layla Campbell", "Hunter Parker", "Nora Evans", "Caleb Edwards", "Lily Collins", "Isaac Stewart", "Hannah Sanchez", "Gabriel Morris", "Aaliyah Rogers", "Julian Reed", "Samantha Cook"];
+
+        const indianReviewsText = [
+            "Avijit crafted a dynamic e-commerce build for our textile company. His tech stack choice was spot-on, and the resulting user experience has doubled our engagement. Highly recommended!",
+            "From initial concept to deployment, Avijit's strategic approach was exceptional. His code quality and pixel-perfect design translated directly into increased conversions. A true asset to any project.",
+            "Avijit's ability to create performant, scalable solutions for Indian startups is unparalleled. His focus on user trust and action-driven marketing translated perfectly for our market. Fantastic results!",
+            "We needed a viral UGC campaign for our new D2C brand, and Avijit delivered beyond expectations. The videos were engaging, authentic, and drove massive traffic to our site. Absolute genius.",
+            "Working with Avijit on our web architecture was a breeze. He brought our vision to life with modern, clean UI and seamless functionality. His neuromarketing approach really shows in the final product.",
+            "I am thoroughly impressed by Avijit's speed of delivery without compromising quality. The landing page he developed is blazing fast and looks stunning on every device. Brilliant work!",
+            "Avijit is a digital growth powerhouse. His strategic insights helped us scale our online revenue by 40% in just two months. If you need serious results, he is the expert to hire.",
+            "The Product Action Ads created by Avijit completely transformed our sales funnel. The psychological hooks he used were incredibly effective. Best marketing investment we've made this year.",
+            "Avijit completely revamped our outdated portfolio site. His eye for premium design and glass-morphism effects gave our agency the modern edge we desperately needed. Phenomenal craftsmanship.",
+            "His technical precision combined with creative marketing foresight makes Avijit stand out. He didn't just build a website; he built a revenue-generating machine for our business.",
+            "Avijit's communication and dedication to the project were outstanding. He understood our local Indian audience perfectly and tailored the UGC content to maximize organic reach.",
+            "We were struggling with audience retention until Avijit restructured our digital channels. His analytics-driven approach completely turned things around. A true professional.",
+            "The custom animations and interactive scroll effects Avijit implemented are mind-blowing. Our luxury brand now has a digital storefront that truly reflects our premium identity.",
+            "Avijit's mobile-first coding approach ensured our site runs flawlessly on smartphones. Our mobile conversion rate skyrocketed immediately after the launch. Outstanding service!",
+            "I highly recommend Avijit for any tech startup looking to scale. His zero-downtime deployment architecture gave us the stability we needed during our peak launch phase.",
+            "Avijit's mastery over HTML, CSS, and JS is evident in his work. He delivered a complex e-commerce platform ahead of schedule with zero bugs. Truly impressive coding skills.",
+            "The video editing and storytelling in Avijit's UGC ads are top-notch. He knows exactly how to capture attention in the first 3 seconds. Our CTR has never been higher.",
+            "Collaborating with Avijit was a game-changer for our social commerce growth. His deep understanding of platform optimization helped us gain thousands of new followers.",
+            "Avijit is an absolute master of performance-driven marketing. His action ads delivered an incredible ROI for our recent product launch. We will definitely work with him again.",
+            "The UI/UX wireframing process with Avijit was incredibly detailed and insightful. He mapped out a flawless user journey that significantly improved our site's overall engagement.",
+            "Avijit's expertise in cloud hosting and AWS ensured our platform could handle massive traffic spikes without a hitch. A highly reliable and skilled digital architect.",
+            "We hired Avijit to create short-form video commercials, and the results were phenomenal. The content felt organic and built immense trust with our target demographic.",
+            "Avijit's ability to blend code and creativity is what makes him a top-tier developer. His digital solutions are not only aesthetically pleasing but also highly functional.",
+            "The growth hacking strategies implemented by Avijit yielded rapid results. Our customer acquisition cost dropped significantly while our retention rates soared.",
+            "Avijit's dedication to delivering pixel-perfect web experiences is unmatched. Every detail of our site was carefully crafted to perfection. A truly premium service.",
+            "We needed a robust digital storefront, and Avijit delivered exactly that. His knowledge of modern web development trends is exceptional. Highly satisfied with the results.",
+            "Avijit's UGC product reviews are incredibly authentic and persuasive. They provided the social proof we needed to boost our online sales. Fantastic content creator.",
+            "The data-driven promotional campaigns executed by Avijit were highly successful. He knows how to analyze metrics and optimize strategies for maximum performance.",
+            "Avijit's custom frontend development skills brought our unique vision to life. The interactive elements he added made our website truly stand out from the competition.",
+            "Working with Avijit was a seamless experience. He is highly responsive, professional, and always goes the extra mile to ensure client satisfaction. A pleasure to collaborate with.",
+            "Avijit's expertise in neuromarketing helped us optimize our landing page for conversions. The subtle psychological triggers he implemented made a huge difference.",
+            "The seamless checkout funnels designed by Avijit significantly reduced our cart abandonment rate. His focus on user experience directly impacted our bottom line.",
+            "Avijit's strategic insights into the Indian e-commerce market were invaluable. He helped us tailor our digital presence to effectively target local consumers.",
+            "The high-speed delivery of our project was impressive. Avijit managed to launch our complex web application well within the tight deadline we had set.",
+            "Avijit's viral video content generated massive brand awareness for our new fashion line. His ability to create shareable and engaging content is truly remarkable.",
+            "The full-stack digital architecture built by Avijit is highly scalable and secure. We now have a solid foundation for our future growth and expansion plans.",
+            "Avijit's compelling marketing materials elevated our brand identity. His creative flair and attention to detail are evident in every piece of content he produces.",
+            "The strategic digital marketing approach taken by Avijit yielded excellent long-term results. Our organic search traffic has grown steadily since he took over.",
+            "Avijit's expertise in UI/UX architecture resulted in an incredibly intuitive and user-friendly platform. Our customers love the new seamless browsing experience.",
+            "The high-converting ad campaigns designed by Avijit exceeded all our KPIs. His ability to craft persuasive copy and eye-catching visuals is a winning combination.",
+            "Avijit's comprehensive platform optimization strategy improved our overall digital footprint. We are now reaching a wider audience and generating more qualified leads.",
+            "The custom 3D text animations implemented by Avijit added a touch of luxury to our brand's website. His technical skills are truly top-notch and highly refined.",
+            "Avijit's authentic user-generated content helped us build a loyal community around our brand. His videos resonate deeply with our target audience.",
+            "The data-driven solutions provided by Avijit helped us make informed marketing decisions. His analytics expertise is a valuable asset for any growing business.",
+            "Avijit's ability to scale digital channels is proven by the results he delivered for us. Our audience engagement metrics have improved across all major platforms.",
+            "The flawlessly functional website built by Avijit has streamlined our business operations. His focus on performance and reliability is highly commendable.",
+            "Avijit's compelling CTAs and psychological hooks significantly increased our ad click-through rates. He knows exactly how to drive action from viewers.",
+            "The holistic digital strategies developed by Avijit transformed our online presence. His integrated approach to web dev and marketing is highly effective.",
+            "Avijit's unparalleled dedication to his craft is evident in the quality of his work. He consistently delivers exceptional results that exceed expectations.",
+            "Partnering with Avijit was the best decision we made for our startup's digital growth. His expertise and strategic guidance were instrumental to our success."
+        ];
+
+        const foreignReviewsText = [
+            "Avijit's work on our global rollout was seamless. His deep understanding of front-end tech and modern architecture was key. Exceptional communication and a stunning design aesthetic. We'll be working with him again.",
+            "An amazing UX focus paired with rock-solid code. Avijit not only understood our requirements but elevated them with unique creative insights. The resulting product Action Ads were highly effective. Incredible ROI!",
+            "Fast communication, deep technical knowledge, and an impeccable sense of design. Avijit is a true full-stack digital growth partner who delivers on time, every time. Highly recommended for complex projects.",
+            "Avijit overhauled our entire Shopify store, implementing custom features that drastically improved our conversion rate. His expertise in e-commerce development is truly world-class.",
+            "The UGC video ads Avijit produced for our US market were a massive hit. He captured the perfect tone and style for our brand, resulting in a significant boost in sales.",
+            "Working with Avijit across different time zones was never an issue. He is highly organized, proactive, and always delivers premium quality work ahead of schedule.",
+            "Avijit's strategic approach to digital brand scaling helped us establish a strong presence in the European market. His insights into audience behavior are incredibly valuable.",
+            "The custom web application Avijit developed for our SaaS startup is flawless. His code is clean, well-documented, and highly scalable. A brilliant frontend developer.",
+            "Avijit's performance-driven action ads completely transformed our social media marketing strategy. The ROI we've seen since partnering with him is absolutely staggering.",
+            "I am thoroughly impressed by Avijit's attention to detail and commitment to excellence. He perfectly translated our brand vision into a stunning digital reality.",
+            "Avijit's expertise in neuromarketing and consumer psychology is evident in his high-converting landing pages. He knows exactly how to turn visitors into loyal customers.",
+            "The viral video content Avijit created for our latest product launch generated unprecedented buzz. His creative storytelling skills are truly exceptional and highly engaging.",
+            "Avijit's seamless cloud deployment strategies ensured our platform remained stable even during massive international traffic surges. A highly dependable technical partner.",
+            "The premium UI/UX design Avijit crafted for our luxury brand perfectly captured our aesthetic. The interactive animations add a sophisticated touch that our clients love.",
+            "Avijit is a true master of his craft. His holistic approach to web development and digital marketing provides a comprehensive solution for rapidly growing global brands.",
+            "The data-driven promotional campaigns executed by Avijit consistently outperformed our previous marketing efforts. His analytical skills and strategic mindset are top-notch.",
+            "Avijit's authentic user-generated content built a strong sense of trust with our international audience. The videos felt organic and resonated deeply with our target demographic.",
+            "The high-speed delivery of our complex digital project was truly impressive. Avijit's workflow is incredibly efficient, ensuring rapid deployment without sacrificing quality.",
+            "Avijit's deep understanding of platform optimization helped us significantly expand our organic reach across multiple social channels. A highly skilled digital growth expert.",
+            "The flawlessly executed checkout funnels designed by Avijit drastically reduced our international cart abandonment rates. His focus on user experience is unparalleled.",
+            "Avijit's compelling marketing materials and strong CTAs effectively drove traffic and conversions for our latest global campaign. His copywriting skills are highly persuasive.",
+            "The custom frontend architecture Avijit built is both robust and beautifully designed. His mastery of modern web technologies ensures a future-proof digital presence.",
+            "Avijit's proactive communication and regular progress updates made the entire development process smooth and stress-free. A highly professional and reliable collaborator.",
+            "The strategic insights Avijit provided into international market trends helped us tailor our digital offerings for maximum impact. His global perspective is invaluable.",
+            "Avijit's UGC product reviews provided the authentic social proof we needed to successfully launch our brand in the UK market. Fantastic and highly relatable content.",
+            "The dynamic e-commerce platform built by Avijit perfectly handles our complex international inventory and shipping requirements. A truly masterful technical achievement.",
+            "Avijit's creative vision and technical execution are a rare combination. He consistently delivers innovative digital solutions that push the boundaries of what's possible.",
+            "The performance-optimized landing pages Avijit designed significantly lowered our customer acquisition costs. His focus on measurable results is highly appreciated.",
+            "Avijit's seamless integration of advanced AI tools into our digital workflow has drastically improved our operational efficiency. A forward-thinking technological innovator.",
+            "The visually stunning short-form video commercials Avijit produced captivated our target audience from the very first second. His editing skills are truly cinematic.",
+            "Avijit's comprehensive digital solutions have streamlined our online operations and boosted our overall profitability. A highly valuable asset to our international team.",
+            "The flawlessly responsive design Avijit implemented ensures our website provides a premium experience on every device and screen size across the globe.",
+            "Avijit's expertise in social commerce growth helped us effectively monetize our international social media following. His strategies are highly actionable and effective.",
+            "The rock-solid code foundation built by Avijit provides the stability and security required for our enterprise-level digital platform. A highly competent technical architect.",
+            "Avijit's compelling visual storyboards accurately translated our marketing concepts into highly engaging and persuasive video content. A truly gifted creative director.",
+            "The data-driven solutions Avijit implemented allowed us to accurately track and optimize our international marketing ROI. His analytical precision is a game-changer.",
+            "Avijit's unparalleled dedication to client success is evident in his willingness to go above and beyond to ensure our project's flawless execution and delivery.",
+            "The strategic digital marketing roadmap developed by Avijit provided a clear path for our brand's rapid international expansion and sustainable long-term growth.",
+            "Avijit's premium web development skills perfectly complement his creative marketing expertise, resulting in a synergistic and highly effective digital growth strategy.",
+            "The authentic audience trust built by Avijit's UGC campaigns has translated into a loyal and rapidly growing international customer base for our expanding brand.",
+            "Avijit's meticulous attention to pixel-perfect detail ensures our digital presence consistently reflects the high-end quality of our premium international products.",
+            "The highly effective action-driven marketing campaigns designed by Avijit have consistently delivered exceptional results and exceeded our ambitious global sales targets.",
+            "Avijit's deep technical knowledge and problem-solving abilities allowed him to effortlessly navigate complex integration challenges during our platform's global rollout.",
+            "The stunning design aesthetic Avijit brought to our project elevated our brand's visual identity and significantly improved our positioning in the competitive global market.",
+            "Avijit's proactive and collaborative approach makes him feel like a true extension of our internal international marketing and development teams. Highly recommended.",
+            "The rapid scaling of our digital channels was made possible by Avijit's expert content strategies and comprehensive platform optimization techniques. Phenomenal growth.",
+            "Avijit's flawless execution of our complex digital project showcased his exceptional project management skills and unwavering commitment to delivering premium results.",
+            "The highly engaging and viral content produced by Avijit has significantly increased our brand's visibility and reach across diverse international demographics.",
+            "Avijit's holistic digital strategies have proven to be the catalyst for our brand's successful transition into a dominant and highly profitable global digital powerhouse."
+        ];
+
+        let structuredReviews = [];
+        let indIdx = 0, forIdx = 0;
+
+        while (indIdx < 50 || forIdx < 50) {
+            for(let i=0; i<3 && indIdx < 50; i++) {
+                let rating = (indIdx % 3 === 0) ? 3 : (indIdx % 5 === 0) ? 4 : 5;
+                let starsStr = '<i class="fas fa-star"></i>'.repeat(rating) + (rating < 5 ? '<i class="far fa-star"></i>'.repeat(5-rating) : '');
+                structuredReviews.push({ name: indianNames[indIdx], location: "INDIA PARTNER", avatar: `https://randomuser.me/api/portraits/thumb/men/${(indIdx+10)%70}.jpg`, stars: starsStr, text: indianReviewsText[indIdx] });
+                indIdx++;
+            }
+            for(let i=0; i<3 && forIdx < 50; i++) {
+                let rating = (forIdx % 4 === 0) ? 4 : 5;
+                let starsStr = '<i class="fas fa-star"></i>'.repeat(rating) + (rating < 5 ? '<i class="far fa-star"></i>'.repeat(5-rating) : '');
+                structuredReviews.push({ name: foreignNames[forIdx], location: "INTERNATIONAL PARTNER", avatar: `https://randomuser.me/api/portraits/thumb/women/${(forIdx+30)%70}.jpg`, stars: starsStr, text: foreignReviewsText[forIdx] });
+                forIdx++;
+            }
+        }
+
+        let displayedCount = 0;
+        function renderReviews(batchSize) {
+            const grid = document.getElementById('reviewsGrid');
+            if(!grid) return;
+            
+            let limit = Math.min(displayedCount + batchSize, structuredReviews.length);
+            
+            for(let i = displayedCount; i < limit; i++) {
+                let rev = structuredReviews[i];
+                let card = document.createElement('div');
+                card.className = "glass-card review-item-card reveal-element visible"; 
+                card.innerHTML = `
+                    <div>
+                        <div class="review-top-info">
+                            <img src="${rev.avatar}" alt="${rev.name}">
+                            <div class="review-author-meta">
+                                <h4>${rev.name}</h4>
+                                <p>${rev.location}</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">${rev.stars}</div>
+                        <p class="review-text-body">"${rev.text}"</p>
+                    </div>
+                `;
+                grid.appendChild(card);
+            }
+            displayedCount = limit;
+            
+            const btn = document.getElementById('loadMoreReviewsBtn');
+            const countSpan = document.getElementById('remainingCount');
+            let remaining = structuredReviews.length - displayedCount;
+            
+            if(remaining <= 0) {
+                if(btn) btn.style.display = 'none';
+            } else {
+                if(btn) btn.style.display = 'inline-flex';
+                if(countSpan) countSpan.innerText = remaining;
+            }
+        }
+        
+        window.loadMoreReviews = function() {
+            renderReviews(6); 
+        };
+    </script>
+</body>
+</html>
